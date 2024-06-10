@@ -1,0 +1,177 @@
+ID,Type,Name,Documentation,SourceId,TargetId,Source,,,Target
+976,AccessRelationship,,,891,946,ApplicationFunction - Calculate Risk,ApplicationFunction,Calculate Risk,DataObject - Insurance Request Data
+882,AccessRelationship,,,867,839,ApplicationComponent - Claim Data Management,,,DataObject - Damage Claim Data
+884,AccessRelationship,,,861,838,ApplicationComponent - Policy Data Management,,,DataObject - Insurance Policy Data
+880,AccessRelationship,,,855,837,ApplicationComponent - Customer Data  Access,,,DataObject - Customer File Data
+974,AccessRelationship,,,909,837,ApplicationFunction - Store Policy,,,DataObject - Customer File Data
+972,AccessRelationship,,,903,838,ApplicationFunction - Create Policy,,,DataObject - Insurance Policy Data
+693,AccessRelationship,create/ update,,564,674,BusinessProcess - Register,,,BusinessObject - Customer File
+697,AccessRelationship,create/ update,,564,673,BusinessProcess - Register,,,BusinessObject - Damage Claim
+708,AccessRelationship,crud,,580,673,BusinessProcess - Valuate,,,BusinessObject - Damage Claim
+706,AccessRelationship,read,,572,675,BusinessProcess - Accept,,,BusinessObject - Insurance Policy
+704,AccessRelationship,read,,572,673,BusinessProcess - Accept,,,BusinessObject - Damage Claim
+695,AccessRelationship,read,,572,674,BusinessProcess - Accept,,,BusinessObject - Customer File
+90702769,AccessRelationship,update,,588,674,BusinessProcess - Pay,,,BusinessObject - Customer File
+756,AggregationRelationship,,,733,521,BusinessCollaboration - Negotiation,,,BusinessRole - Customer
+760,AggregationRelationship,,,733,507,BusinessCollaboration - Negotiation,,,BusinessRole - Intermediary
+758,AggregationRelationship,,,733,514,BusinessCollaboration - Negotiation,,,BusinessRole - Insurer
+762,AggregationRelationship,,,740,507,BusinessCollaboration - Contracting,,,BusinessRole - Intermediary
+764,AggregationRelationship,,,740,514,BusinessCollaboration - Contracting,,,BusinessRole - Insurer
+768,AggregationRelationship,,,740,521,BusinessCollaboration - Contracting,,,BusinessRole - Customer
+81b9d07c,AggregationRelationship,,,1546,352,BusinessCollaboration - collaboration,,,BusinessActor - Document Processing SSC
+2891eb9f,AggregationRelationship,,,1546,528,BusinessCollaboration - collaboration,,,BusinessRole - Customer's Bank
+806,AggregationRelationship,,,791,674,BusinessObject - Customer,,,BusinessObject - Customer File
+816,AggregationRelationship,,,675,792,BusinessObject - Insurance Policy,,,BusinessObject - Insurance Request
+814,AggregationRelationship,,,675,673,BusinessObject - Insurance Policy,,,BusinessObject - Damage Claim
+1386,AssignmentRelationship,,,275,514,BusinessActor - Archisurance,,,BusinessRole - Insurer
+774,AssignmentRelationship,,,514,612,BusinessRole - Insurer,,,BusinessProcess - Create Contract
+772,AssignmentRelationship,,,733,721,BusinessCollaboration - Negotiation,,,BusinessInteraction - Formalise Request
+1388,AssignmentRelationship,,,514,556,BusinessRole - Insurer,,,BusinessProcess - Handle Claim
+1381,AssignmentRelationship,,,1337,1368,BusinessActor - Client,,,BusinessRole - Insurant
+4a214d41,AssignmentRelationship,,,740,722,BusinessCollaboration - Contracting,,,BusinessInteraction - Check and  Sign Contract
+464,AssociationRelationship,,,416,310,BusinessActor - Director of Operations,,,BusinessActor - Car
+466,AssociationRelationship,,,416,317,BusinessActor - Director of Operations,,,BusinessActor - Legal Aid
+468,AssociationRelationship,,,416,352,BusinessActor - Director of Operations,,,BusinessActor - Document Processing SSC
+458,AssociationRelationship,,,409,282,BusinessActor - Director of Sales,,,BusinessActor - Customer Relations
+445,AssociationRelationship,,,402,345,BusinessActor - Board,,,BusinessActor - HRM
+447,AssociationRelationship,,,402,409,BusinessActor - Board,,,BusinessActor - Director of Sales
+460,AssociationRelationship,,,409,289,BusinessActor - Director of Sales,,,BusinessActor - Intermediary Relations
+470,AssociationRelationship,,,423,331,BusinessActor - Director of Finance,,,BusinessActor - Finance
+449,AssociationRelationship,,,402,423,BusinessActor - Board,,,BusinessActor - Director of Finance
+443,AssociationRelationship,,,402,338,BusinessActor - Board,,,BusinessActor - Product Development
+462,AssociationRelationship,,,416,303,BusinessActor - Director of Operations,,,BusinessActor - Home  &  Away
+437,AssociationRelationship,,,402,416,BusinessActor - Board,,,BusinessActor - Director of Operations
+1259,AssociationRelationship,,,521,1250,BusinessRole - Customer,,,Value - Be Insured
+a2243077,AssociationRelationship,,,282,1536,BusinessActor - Customer Relations,,,BusinessInterface - phone
+659978dc,AssociationRelationship,,,1538,282,BusinessInterface - e-mail,,,BusinessActor - Customer Relations
+be2dbdfd,AssociationRelationship,,,1544,352,BusinessInterface - mail,,,BusinessActor - Document Processing SSC
+58ee7df2,AssociationRelationship,,,1540,289,BusinessInterface - phone,,,BusinessActor - Intermediary Relations
+4a4cdf33,AssociationRelationship,,,1542,289,BusinessInterface - GIM,,,BusinessActor - Intermediary Relations
+1274,AssociationRelationship,,,1250,1208,Value - Be Insured,,,BusinessService - Premium Payment Service
+670aa5ed,AssociationRelationship,,,986,1089,Node - Mainframe,,,CommunicationNetwork - LAN
+197b66d6,AssociationRelationship,,,1089,998,CommunicationNetwork - LAN,,,Node - Firewall
+e479d313,AssociationRelationship,,,998,1095,Node - Firewall,,,CommunicationNetwork - BIBIT
+2dd4031d,AssociationRelationship,,,1095,1004,CommunicationNetwork - BIBIT,,,Node - Firewall
+3fb2a575,AssociationRelationship,,,1004,1101,Node - Firewall,,,CommunicationNetwork - LAN
+7e50c753,AssociationRelationship,,,1101,1071,CommunicationNetwork - LAN,,,Device - Admin Server
+80c919e4,AssociationRelationship,,,1089,1065,CommunicationNetwork - LAN,,,Device - NAS File Server
+ec3fef51,AssociationRelationship,,,992,1089,Node - Unix Server Farm,,,CommunicationNetwork - LAN
+dd9c00de,AssociationRelationship,,,1101,1882,CommunicationNetwork - LAN,,,Device - BIBIT Server
+812,CompositionRelationship,,,674,673,BusinessObject - Customer File,,,BusinessObject - Damage Claim
+810,CompositionRelationship,,,674,675,BusinessObject - Customer File,,,BusinessObject - Insurance Policy
+808,CompositionRelationship,,,674,792,BusinessObject - Customer File,,,BusinessObject - Insurance Request
+1831,CompositionRelationship,,,843,855,ApplicationComponent - Home & Away Policy Administration,,,ApplicationComponent - Customer Data  Access
+1833,CompositionRelationship,,,843,861,ApplicationComponent - Home & Away Policy Administration,,,ApplicationComponent - Policy Data Management
+1778,FlowRelationship,,,528,501,BusinessRole - Customer's Bank,,,BusinessFunction - Financial Handling
+1648,FlowRelationship,,,345,324,BusinessActor - HRM,,,BusinessActor - Back Office
+1650,FlowRelationship,,,324,345,BusinessActor - Back Office,,,BusinessActor - HRM
+1652,FlowRelationship,,,324,338,BusinessActor - Back Office,,,BusinessActor - Product Development
+1644,FlowRelationship,,,338,324,BusinessActor - Product Development,,,BusinessActor - Back Office
+1768,FlowRelationship,,,489,501,BusinessFunction - Claims Handling,,,BusinessFunction - Financial Handling
+1766,FlowRelationship,,,489,477,BusinessFunction - Claims Handling,,,BusinessFunction - Maintaining Customer Relations
+1786,FlowRelationship,,,495,501,BusinessFunction - Asset Management,,,BusinessFunction - Financial Handling
+1764,FlowRelationship,,,477,489,BusinessFunction - Maintaining Customer Relations,,,BusinessFunction - Claims Handling
+1770,FlowRelationship,,,501,489,BusinessFunction - Financial Handling,,,BusinessFunction - Claims Handling
+1776,FlowRelationship,,,501,528,BusinessFunction - Financial Handling,,,BusinessRole - Customer's Bank
+1762,FlowRelationship,asset info,,495,483,BusinessFunction - Asset Management,,,BusinessFunction - Contracting
+1618,FlowRelationship,Claim form (electronic),,352,282,BusinessActor - Document Processing SSC,,,BusinessActor - Customer Relations
+1616,FlowRelationship,claim form (paper),,282,352,BusinessActor - Customer Relations,,,BusinessActor - Document Processing SSC
+1784,FlowRelationship,claim info,,489,521,BusinessFunction - Claims Handling,,,BusinessRole - Customer
+1772,FlowRelationship,claims,,521,477,BusinessRole - Customer,,,BusinessFunction - Maintaining Customer Relations
+1638,FlowRelationship,confirm,,331,324,BusinessActor - Finance,,,BusinessActor - Back Office
+1636,FlowRelationship,confirmation,,528,331,BusinessRole - Customer's Bank,,,BusinessActor - Finance
+1758,FlowRelationship,contract info,,483,471,BusinessFunction - Contracting,,,BusinessFunction - Maintaining Intermediary Relations
+1760,FlowRelationship,contract info.,,483,495,BusinessFunction - Contracting,,,BusinessFunction - Asset Management
+1780,FlowRelationship,cust. info,,507,471,BusinessRole - Intermediary,,,BusinessFunction - Maintaining Intermediary Relations
+1752,FlowRelationship,Customer Information,,521,507,BusinessRole - Customer,,,BusinessRole - Intermediary
+1756,FlowRelationship,customer information,,471,483,BusinessFunction - Maintaining Intermediary Relations,,,BusinessFunction - Contracting
+1630,FlowRelationship,electronic contracts,,352,324,BusinessActor - Document Processing SSC,,,BusinessActor - Back Office
+1622,FlowRelationship,Electronic Contracts,,352,289,BusinessActor - Document Processing SSC,,,BusinessActor - Intermediary Relations
+1774,FlowRelationship,insurance info,,477,521,BusinessFunction - Maintaining Customer Relations,,,BusinessRole - Customer
+1620,FlowRelationship,Intermediary Contracts,,289,352,BusinessActor - Intermediary Relations,,,BusinessActor - Document Processing SSC
+1788,FlowRelationship,money,,501,495,BusinessFunction - Financial Handling,,,BusinessFunction - Asset Management
+1628,FlowRelationship,paper contracts,,324,352,BusinessActor - Back Office,,,BusinessActor - Document Processing SSC
+1634,FlowRelationship,payment,,331,528,BusinessActor - Finance,,,BusinessRole - Customer's Bank
+1632,FlowRelationship,payment order,,324,331,BusinessActor - Back Office,,,BusinessActor - Finance
+1782,FlowRelationship,product info.,,471,507,BusinessFunction - Maintaining Intermediary Relations,,,BusinessRole - Intermediary
+1750,FlowRelationship,Product Information,,507,521,BusinessRole - Intermediary,,,BusinessRole - Customer
+1329,RealizationRelationship,,,1311,1208,BusinessProcess - Collect Premium,,,BusinessService - Premium Payment Service
+1323,RealizationRelationship,,,556,1202,BusinessProcess - Handle Claim,,,BusinessService - Claim Registration Service
+1327,RealizationRelationship,,,1302,1214,BusinessProcess - Inform Customer,,,BusinessService - Customer Information Service
+1321,RealizationRelationship,,,596,1196,BusinessProcess - Close Contract,,,BusinessService - Insurance Application Service
+1325,RealizationRelationship,,,556,1226,BusinessProcess - Handle Claim,,,BusinessService - Claims Payment Service
+1434,RealizationRelationship,,,588,1226,BusinessProcess - Pay,,,BusinessService - Claims Payment Service
+1430,RealizationRelationship,,,564,1202,BusinessProcess - Register,,,BusinessService - Claim Registration Service
+1432,RealizationRelationship,,,572,1214,BusinessProcess - Accept,,,BusinessService - Customer Information Service
+718,RealizationRelationship,,,676,673,Representation - Claim Form,,,BusinessObject - Damage Claim
+955,RealizationRelationship,,,837,674,DataObject - Customer File Data,,,BusinessObject - Customer File
+957,RealizationRelationship,,,839,673,DataObject - Damage Claim Data,,,BusinessObject - Damage Claim
+965,RealizationRelationship,,,838,794,DataObject - Insurance Policy Data,,,BusinessObject - Car Insurance Policy
+953,RealizationRelationship,,,946,792,DataObject - Insurance Request Data,,,BusinessObject - Insurance Request
+967,RealizationRelationship,,,838,793,DataObject - Insurance Policy Data,,,BusinessObject - Travel  Insurance Policy
+961,RealizationRelationship,,,838,795,DataObject - Insurance Policy Data,,,BusinessObject - Liability  Insurance Policy
+959,RealizationRelationship,,,838,796,DataObject - Insurance Policy Data,,,BusinessObject - Legal aid  Insurance Policy
+963,RealizationRelationship,,,838,803,DataObject - Insurance Policy Data,,,BusinessObject - Home Insurance Policy
+1452,RealizationRelationship,,,861,1220,ApplicationComponent - Policy Data Management,,,BusinessService - Customer data mutation Service
+1450,RealizationRelationship,,,1393,1196,ApplicationComponent - CRM System,,,BusinessService - Insurance Application Service
+1454,RealizationRelationship,,,1399,1208,ApplicationComponent - Financial Application,,,BusinessService - Premium Payment Service
+1424,RealizationRelationship,,,861,1414,ApplicationComponent - Policy Data Management,,,ApplicationService - Claim InfoServ
+1422,RealizationRelationship,,,1393,1407,ApplicationComponent - CRM System,,,ApplicationService - CIS
+943,RealizationRelationship,,,843,935,ApplicationComponent - Home & Away Policy Administration,,,ApplicationService - Policy Creation Service
+1127,RealizationRelationship,,,1065,1110,Device - NAS File Server,,,TechnologyService - File Service
+1125,RealizationRelationship,,,998,1116,Node - Firewall,,,TechnologyService - Network Service
+1136,RealizationRelationship,,,986,1128,Node - Mainframe,,,TechnologyService - Database Service
+1482,RealizationRelationship,,,986,1455,Node - Mainframe,,,TechnologyService - Claim Files Service
+1480,RealizationRelationship,,,1065,1462,Device - NAS File Server,,,TechnologyService - Customer File Service
+1892,RealizationRelationship,,,1882,1813,Device - BIBIT Server,,,ApplicationComponent - Bank System
+1879,RealizationRelationship,,,1870,1399,SystemSoftware - Financial Software,,,ApplicationComponent - Financial Application
+09da63b3,ServingRelationship,,,1540,507,BusinessInterface - phone,,,BusinessRole - Intermediary
+8d85d21d,ServingRelationship,,,1542,507,BusinessInterface - GIM,,,BusinessRole - Intermediary
+1295,ServingRelationship,,,1226,521,BusinessService - Claims Payment Service,,,BusinessRole - Customer
+1293,ServingRelationship,,,1202,521,BusinessService - Claim Registration Service,,,BusinessRole - Customer
+1297,ServingRelationship,,,1214,521,BusinessService - Customer Information Service,,,BusinessRole - Customer
+1282,ServingRelationship,,,1196,521,BusinessService - Insurance Application Service,,,BusinessRole - Customer
+1299,ServingRelationship,,,1208,521,BusinessService - Premium Payment Service,,,BusinessRole - Customer
+1438,ServingRelationship,,,1202,1368,BusinessService - Claim Registration Service,,,BusinessRole - Insurant
+1444,ServingRelationship,,,1196,564,BusinessService - Insurance Application Service,,,BusinessProcess - Register
+1446,ServingRelationship,,,1220,564,BusinessService - Customer data mutation Service,,,BusinessProcess - Register
+1448,ServingRelationship,,,1208,588,BusinessService - Premium Payment Service,,,BusinessProcess - Pay
+1442,ServingRelationship,,,1226,1368,BusinessService - Claims Payment Service,,,BusinessRole - Insurant
+1440,ServingRelationship,,,1214,1368,BusinessService - Customer Information Service,,,BusinessRole - Insurant
+b74a5ecd,ServingRelationship,,,1407,612,ApplicationService - CIS,,,BusinessProcess - Create Contract
+1731,ServingRelationship,,,935,722,ApplicationService - Policy Creation Service,,,BusinessInteraction - Check and  Sign Contract
+1733,ServingRelationship,,,1414,721,ApplicationService - Claim InfoServ,,,BusinessInteraction - Formalise Request
+1428,ServingRelationship,,,1414,1399,ApplicationService - Claim InfoServ,,,ApplicationComponent - Financial Application
+1426,ServingRelationship,,,1407,861,ApplicationService - CIS,,,ApplicationComponent - Policy Data Management
+1821,ServingRelationship,,,1793,1800,ApplicationComponent - Call center application,,,ApplicationComponent - Web portal
+1823,ServingRelationship,,,1393,1800,ApplicationComponent - CRM System,,,ApplicationComponent - Web portal
+1825,ServingRelationship,,,849,1800,ApplicationComponent - Risk Assessment,,,ApplicationComponent - Web portal
+1829,ServingRelationship,,,1399,843,ApplicationComponent - Financial Application,,,ApplicationComponent - Home & Away Policy Administration
+1827,ServingRelationship,,,855,849,ApplicationComponent - Customer Data  Access,,,ApplicationComponent - Risk Assessment
+1835,ServingRelationship,,,855,1793,ApplicationComponent - Customer Data  Access,,,ApplicationComponent - Call center application
+853128f7,ServingRelationship,,,1813,1399,ApplicationComponent - Bank System,,,ApplicationComponent - Financial Application
+40e2692a,ServingRelationship,,,1455,1393,TechnologyService - Claim Files Service,,,ApplicationComponent - CRM System
+63eeca37,ServingRelationship,,,1455,861,TechnologyService - Claim Files Service,,,ApplicationComponent - Policy Data Management
+bc36ad29,ServingRelationship,,,1462,861,TechnologyService - Customer File Service,,,ApplicationComponent - Policy Data Management
+776f61b0,ServingRelationship,,,1462,1399,TechnologyService - Customer File Service,,,ApplicationComponent - Financial Application
+f19393d1,ServingRelationship,call,,1536,521,BusinessInterface - phone,,,BusinessRole - Customer
+7f9b43e9,ServingRelationship,write,,1538,521,BusinessInterface - e-mail,,,BusinessRole - Customer
+16871b47,ServingRelationship,write,,1544,521,BusinessInterface - mail,,,BusinessRole - Customer
+826,SpecializationRelationship,,,796,675,BusinessObject - Legal aid  Insurance Policy,,,BusinessObject - Insurance Policy
+818,SpecializationRelationship,,,793,675,BusinessObject - Travel  Insurance Policy,,,BusinessObject - Insurance Policy
+824,SpecializationRelationship,,,795,675,BusinessObject - Liability  Insurance Policy,,,BusinessObject - Insurance Policy
+822,SpecializationRelationship,,,803,675,BusinessObject - Home Insurance Policy,,,BusinessObject - Insurance Policy
+820,SpecializationRelationship,,,794,675,BusinessObject - Car Insurance Policy,,,BusinessObject - Insurance Policy
+655,TriggeringRelationship,,,651,564,BusinessEvent - Damage Occured,,,BusinessProcess - Register
+1335,TriggeringRelationship,,,1302,1311,BusinessProcess - Inform Customer,,,BusinessProcess - Collect Premium
+657,TriggeringRelationship,,,564,572,BusinessProcess - Register,,,BusinessProcess - Accept
+1333,TriggeringRelationship,,,556,1302,BusinessProcess - Handle Claim,,,BusinessProcess - Inform Customer
+728,TriggeringRelationship,,,721,612,BusinessInteraction - Formalise Request,,,BusinessProcess - Create Contract
+659,TriggeringRelationship,,,572,580,BusinessProcess - Accept,,,BusinessProcess - Valuate
+661,TriggeringRelationship,,,580,588,BusinessProcess - Valuate,,,BusinessProcess - Pay
+732,TriggeringRelationship,,,650,721,BusinessEvent - Request for Insurance,,,BusinessInteraction - Formalise Request
+2d89d4e7,TriggeringRelationship,,,612,722,BusinessProcess - Create Contract,,,BusinessInteraction - Check and  Sign Contract
+95f13189,TriggeringRelationship,,,521,650,BusinessRole - Customer,,,BusinessEvent - Request for Insurance
+930,TriggeringRelationship,,,891,897,ApplicationFunction - Calculate Risk,,,ApplicationFunction - Calculate Premium
+932,TriggeringRelationship,,,897,903,ApplicationFunction - Calculate Premium,,,ApplicationFunction - Create Policy
+934,TriggeringRelationship,,,903,909,ApplicationFunction - Create Policy,,,ApplicationFunction - Store Policy
